@@ -27,7 +27,7 @@ nbdist/
 
 
 ### ANgular ###
-frontend/node_modules
+frontedn/node_modules
 
 # Java
 *.class
