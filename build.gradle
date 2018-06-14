@@ -94,4 +94,4 @@ task buildAllFast(type: NpmTask, dependsOn: 'npmInstall') {
 
 //comm this one, for only backend
 //bootRun.dependsOn(buildAllFast)
-build.dependsOn(buildAllFast)
+//build.dependsOn(buildAllFast)
