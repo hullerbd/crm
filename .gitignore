@@ -31,8 +31,6 @@ frontedn/node_modules
 
 # Java
 *.class
-*.jar
-*.war
 *.ear
 
 # Build
