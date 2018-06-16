@@ -1,0 +1,28 @@
+#FROM openjdk:8-jdk-alpine
+#
+#
+#RUN useradd -d /home/ubuntu -ms /bin/bash -g root -G sudo -p ubuntu ubuntu
+#USER ubuntu
+#WORKDIR /home/ubuntu
+#
+#EXPOSE 8080
+#VOLUME /tmp
+#
+#ARG JAR_FILE
+#COPY ${JAR_FILE} app.jar
+#ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+
+FROM anapsix/alpine-java
+#FROM openjdk:8-jdk-alpine
+
+RUN apk --update add bash wget dpkg-dev
+
+RUN adduser -D user
+USER user
+
+EXPOSE 8080
+VOLUME /tmp
+
+ARG JAR_FILE
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
