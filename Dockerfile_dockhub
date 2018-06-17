@@ -1,3 +1,0 @@
-FROM openjdk:8-jdk-alpine
-VOLUME /tmp
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/K./urandom","-jar","/crm.jar"]

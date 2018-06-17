@@ -41,9 +41,6 @@ docker {
     buildArgs(['JAR_FILE': "${bootJar.archiveName}"])
 }
 
-dockerPush{
-
-}
 //========Docker - End
 
 repositories {
