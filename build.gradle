@@ -32,12 +32,6 @@ bootJar {
     version = '0.1.0'
 }
 
-//task initConfig(type: Copy) {
-//    from('startup.sh')
-//    from('my.cnf')
-//    into 'build/docker'
-//}
-
 docker {
     dependsOn build//, initConfig
     name "${project.group}/${bootJar.baseName}"

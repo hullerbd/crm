@@ -18,13 +18,14 @@
 
 ### NetBeans ###
 nbproject/private/
-build/classes
-build/distributions
-build/libs
-build/reports
-build/resources
-build/test-results
-build/temp
+build/
+#build/classes
+#build/distributions
+#build/libs
+#build/reports
+#build/resources
+#build/test-results
+#build/temp
 nbbuild/
 dist/
 nbdist/
